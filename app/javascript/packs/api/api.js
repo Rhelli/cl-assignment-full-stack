@@ -9,13 +9,13 @@ export const fetchProjectIndexApiRequest = () => {
 }
 
 export const fetchFoldersIndexApiRequest = () => {
-  fetch('/api/v1/folders/index')
-  .then(response => {
-    if (response.ok) {
-      return response.json()
-    }
-    throw new Error('A Response Error With Folders Has Occurred');
-  })
+  return fetch('/api/v1/folders/index')
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error('A Response Error With Folders Has Occurred');
+    })
 }
 
 export const fetchTopicsIndexApiRequest = () => {

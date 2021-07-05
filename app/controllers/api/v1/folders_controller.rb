@@ -4,7 +4,7 @@ class Api::V1::FoldersController < ApplicationController
     if @folders
       render json: @folders, each_serializer: FoldersSerializer
     else
-      render json: { status: 500, errors: ['No Folders Found.'] }
+      render json: { status: 500, error: 'No Folders Found.' }
     end
   end
 
@@ -13,7 +13,7 @@ class Api::V1::FoldersController < ApplicationController
     if @folder
       render json: { folder: @folder }
     else
-      render json: { status: 500, errors: ['Folder Does Not Exist.'] }
+      render json: { status: 500, error: 'Folder Does Not Exist.' }
     end
   end
 
