@@ -16,7 +16,7 @@ For project architecture, I have chosen to create the project within one single 
 
 The following are the completed tasks:
 
-- `[x]` Data model that fully represents the described system
+- [x] Data model that fully represents the described system
 - [ ] A documented way to load sample data into the database
 - [ ] Homepage listing projects and folders
 - [ ] Topics filter on the homepage
