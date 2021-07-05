@@ -1,3 +1,3 @@
-class FolderSerializer < ActiveModel::Serializer
+class FoldersSerializer < ActiveModel::Serializer
   attributes :title, :description, :started, :projects
 end

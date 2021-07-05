@@ -1,8 +1,8 @@
 class Api::V1::FoldersController < ApplicationController
   def index
-    @folders = Folders.all.order(started: :desc)
+    @folders = Folder.all.order(started: :desc)
     if @folders
-      render json: @folders, each_serializer: FolderSerializer
+      render json: @folders, each_serializer: FoldersSerializer
     else
       render json: { status: 500, errors: ['No Folders Found.'] }
     end

@@ -1,3 +1,3 @@
-class TopicSerializer < ActiveModel::Serializer
+class TopicsSerializer < ActiveModel::Serializer
   attributes :title, :topic
 end
