@@ -26,11 +26,17 @@ The following are the completed tasks:
 
 All models have been set up, and the database functions correctly so that Project are able to be a part of Folders, Topics can be assigned to Projects, and each can be references easily from one another. Serializers have also been created to enhance the ease of passing this information over the front end.
 
-Unfortunately, given the time restrictions, no data passthrough to the frontend has been enabled yet. A template for React is currently set up, and the data is almost ready to be passed through.
+Unfortunately, given the time restrictions, no data passthrough to the frontend has been enabled yet. A template for React is currently set up, and the data is almost ready to be passed through, however the application's controllers remain as the last step in the backend process in order to successfully pass any database information to the frontend.
 
 ### To Do
 
-- Controllers need finishing and data needs to be modified according to the relevant containers/components it is rendered in
+#### Backend
+  - Controllers need finishing and data needs to be modified according to the relevant containers/components it is rendered in
  - DB seed file needs to be created, utilising the provided sample_data.json
  - Basic styling for the homepage needs to be applied
  - Filtering for Topics' Project association needs to be enabled in the model level.
+
+#### Frontend
+ - React homepage container creation
+ - React component creation for displaying folders, projects and topics
+ - API fetch call creation to request and receive information made available from the backend system.
