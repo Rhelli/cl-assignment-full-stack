@@ -12,7 +12,7 @@ For this project, I selected the use of Rails for the backend system and React f
 
 For project architecture, I have chosen to create the project within one single repository. Normally, I would choose to separate the frontend from the backend in separate repositories, however it makes logical sense to combine the React frontend with the Rails backend in one repository in this case.
 
-### Checklist && Completion
+### Checklist & Completion
 
 The following are the completed tasks:
 
