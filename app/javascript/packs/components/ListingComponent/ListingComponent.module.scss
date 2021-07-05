@@ -1,0 +1,62 @@
+.listingContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+
+  h2 {
+    font-size: 20px;
+    color: #909090;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .folderList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+
+    .folderBlock {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 48%;
+      margin-bottom: 15px;
+      padding: 15px 10px;
+      background-color: #AFD4DE;
+      border-radius: 3px;
+
+      .folderBlockTitleDate {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 12px;
+
+        .folderTitle {
+          font-size: 20px;
+          line-height: 26px;
+        }
+
+        .folderStarted {
+          margin-left: auto;
+          text-align: right;
+        }
+      }
+
+      .folderBlockDesc {
+        display: block;
+        width: 100%;
+        height: 30px;
+
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
