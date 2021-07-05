@@ -39,13 +39,17 @@ const ListingComponent = () => {
               <div className={styles.folderBlockDesc}>
                 <p>{folder.description}</p>
               </div>
-              <div>
-                <p>Projects</p>
-                <div>
+              <div className={styles.folderBlockProjects}>
+                <p className={styles.projectsTitle}>Projects</p>
+                <div className={styles.projectList}>
                   {
                     folder.projects.map(project => (
                       <div key={uuidv4()}>
-                        <p>{project.title}</p>
+                        <p>
+                        {' '}
+                        &gt;
+                        {' '}
+                        {project.title}</p>
                       </div>
                     ))
                   }

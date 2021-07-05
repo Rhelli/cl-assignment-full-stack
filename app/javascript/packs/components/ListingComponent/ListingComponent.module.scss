@@ -26,6 +26,14 @@
       padding: 15px 10px;
       background-color: #AFD4DE;
       border-radius: 3px;
+      border-bottom: 4px solid #FFA07D;
+      transition-duration: 0.1s;
+
+      &:hover {
+        background-color: #A6DDEB;
+        transition-duration: 0.2s;
+        border-bottom: 4px solid #ff672f;
+      }
 
       .folderBlockTitleDate {
         display: flex;
@@ -36,11 +44,14 @@
         .folderTitle {
           font-size: 20px;
           line-height: 26px;
+          color: #001758;
         }
 
         .folderStarted {
           margin-left: auto;
           text-align: right;
+          font-size: 12px;
+          color: #707070;
         }
       }
 
@@ -50,11 +61,42 @@
         height: 30px;
 
         p {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 18px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+        }
+      }
+
+      .folderBlockProjects {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        background-color: #A9C9D2;
+        padding: 8px;
+        border-radius: 4px;
+        
+        .projectsTitle {
+          font-size: 16px;
+          margin-bottom: 6px;
+        }
+
+        .projectList {
+          div {
+            margin-bottom: 2px;
+            padding-left: 10px;
+            p {
+              color: #404040;
+              font-size: 14px;
+              transition-duration: 0.1s;
+
+              &:hover {
+                color: #ff672f;
+                transition-duration: 0.15s;
+              }
+            }
+          }
         }
       }
     }
