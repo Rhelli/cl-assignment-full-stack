@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import App from './components/App';
+import AppComponent from './components/AppComponent/AppComponent';
+import '../../assets/fonts/larsseit-webfont/larsseit-webfont.css';
+import './Index.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-    <App />,
+    <AppComponent />,
     document.body.appendChild(document.createElement('div'))
   );
 });
