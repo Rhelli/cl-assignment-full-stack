@@ -1,6 +1,6 @@
 class Api::V1::ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    @projects = Project.all.order(started: :desc)
     if @projects
       render json: @projects, each_serializer: ProjectSerializer
     else

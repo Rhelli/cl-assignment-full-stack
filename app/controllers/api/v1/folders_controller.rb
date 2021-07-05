@@ -1,6 +1,6 @@
 class Api::V1::FoldersController < ApplicationController
   def index
-    @folders = Folders.all
+    @folders = Folders.all.order(started: :desc)
     if @folders
       render json: @folders, each_serializer: FolderSerializer
     else
