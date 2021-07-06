@@ -76,6 +76,7 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.15.3)
+    foreman (0.87.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hirb (0.7.3)
@@ -190,6 +191,7 @@ DEPENDENCIES
   active_model_serializers
   bootsnap (>= 1.4.4)
   byebug
+  foreman
   hirb
   jbuilder (~> 2.7)
   json

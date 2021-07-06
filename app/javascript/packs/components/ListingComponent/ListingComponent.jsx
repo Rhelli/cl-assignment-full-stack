@@ -2,10 +2,14 @@ import React, { useState, useLayoutEffect, memo } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import dateFormat from 'dateformat';
 import { fetchFoldersIndexApiRequest } from '../../api/api';
+import projectCounter from '../../utils/listingUtils';
 import styles from './ListingComponent.module.scss';
 
 const ListingComponent = () => {
   const [folderData, setFolderData] = useState(null);
+  const [viewOption, setViewOption] = useState('folders');
+
+  console.log(viewOption);
 
   const apiData = async () => {
     const apiResponse = await fetchFoldersIndexApiRequest();
@@ -20,7 +24,16 @@ const ListingComponent = () => {
 
   return folderData ? (
     <div className={styles.listingContainer}>
-      <h2>Folders ({folderData.length})</h2>
+      <select
+        name="viewOption"
+        id="viewOption"
+        value={viewOption}
+        onChange={event => setViewOption(event.target.value)}
+        className={styles.viewOptionSelector}
+      >
+        <option value="folders">Folders ({folderData.length})</option>
+        <option value="projects">Projects ({projectCounter(folderData)})</option>
+      </select>
       <div className={styles.folderList}>
         {
           folderData.map(folder => (
