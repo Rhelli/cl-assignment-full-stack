@@ -2,7 +2,7 @@ class Api::V1::ProjectsController < ApplicationController
   def index
     @projects = Project.all.order(started: :desc)
     if @projects
-      render json: @projects, each_serializer: ProjectSerializer
+      render json: @projects, each_serializer: ProjectsSerializer
     else
       render json: { status: 500, errors: ['No Projects Found.'] }
     end

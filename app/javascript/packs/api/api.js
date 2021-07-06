@@ -1,5 +1,5 @@
 export const fetchProjectIndexApiRequest = () => {
-  fetch('/api/v1/projects/index')
+  return fetch('/api/v1/projects/index')
   .then(response => {
     if (response.ok) {
       return response.json();
@@ -19,7 +19,7 @@ export const fetchFoldersIndexApiRequest = () => {
 }
 
 export const fetchTopicsIndexApiRequest = () => {
-  fetch('/api/v1/topics/index')
+  return fetch('/api/v1/topics/index')
   .then(response => {
     if (response.ok) {
       return response.json();
