@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect, memo } from 'react';
 import FolderListComponent from '../FolderListComponent/FolderListComponent';
 import ProjectListComponent from '../ProjectComponent/ProjectComponent';
 import { fetchFoldersIndexApiRequest, fetchProjectIndexApiRequest } from '../../api/api';
-import projectCounter from '../../utils/listingUtils';
+import { projectCounter } from '../../utils/listingUtils';
 import styles from './ListingComponent.module.scss';
 
 const ListingComponent = () => {
@@ -28,8 +28,6 @@ const ListingComponent = () => {
       resolveProjectDataFetch();
     }
   }, [viewOption]);
-
-  console.log(folderData);
 
   return folderData && viewOption === 'folders' ? (
     <div className={styles.listingContainer}>

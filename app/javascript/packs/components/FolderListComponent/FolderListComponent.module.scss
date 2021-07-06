@@ -3,7 +3,16 @@
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
-  height: auto;
+  overflow-y: auto;
+  padding: 0 4px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #606E97;
+  }
 
   .folderBlock {
     display: flex;
