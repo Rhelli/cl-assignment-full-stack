@@ -106,6 +106,12 @@
           color: #fff;
           font-weight: 500;
           border-radius: 3px;
+          transition-duration: 0.1s;
+
+          &:hover {
+            color: #FF4D0C;
+            transition-duration: 0.15s;
+          }
         }
 
         .folderItem {
@@ -115,8 +121,9 @@
 
         .noTopic,
         .noFolder {
-          background-color: #808B96;
-          border: 1px solid #707A83;
+          background-color: #b9b9b9;
+          border: none;
+          color: #707070;
         }
       }
     }
