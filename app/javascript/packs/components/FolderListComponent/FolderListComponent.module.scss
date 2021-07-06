@@ -29,6 +29,7 @@
       background-color: #A6DDEB;
       transition-duration: 0.2s;
       border-bottom: 4px solid #ff672f;
+      cursor: pointer;
     }
 
     .folderBlockTitleDate {
@@ -90,6 +91,7 @@
             &:hover {
               color: #ff672f;
               transition-duration: 0.15s;
+              cursor: pointer;
             }
           }
         }

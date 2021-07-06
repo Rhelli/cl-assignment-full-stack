@@ -8,7 +8,7 @@ import styles from './ListingComponent.module.scss';
 const ListingComponent = () => {
   const [folderData, setFolderData] = useState(null);
   const [projectData, setProjectData] = useState(null);
-  const [viewOption, setViewOption] = useState('projects');
+  const [viewOption, setViewOption] = useState('folders');
 
   const resolveFolderDataFetch = async () => {
     const apiResponse = await fetchFoldersIndexApiRequest();

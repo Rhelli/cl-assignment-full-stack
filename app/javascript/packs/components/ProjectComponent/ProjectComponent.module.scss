@@ -31,6 +31,7 @@
       background-color: #a6ddeb;
       transition-duration: 0.2s;
       border-bottom: 4px solid #ff672f;
+      cursor: pointer;
     }
 
     .projectBlockTitleDate {
@@ -111,6 +112,7 @@
           &:hover {
             color: #FF4D0C;
             transition-duration: 0.15s;
+            cursor: pointer;
           }
         }
 
@@ -124,6 +126,11 @@
           background-color: #b9b9b9;
           border: none;
           color: #707070;
+
+          &:hover {
+            color: #707070;
+            cursor: auto;
+          }
         }
       }
     }

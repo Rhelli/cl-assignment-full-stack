@@ -1,7 +1,7 @@
 # CitizenLab Full-Stack Engineer Assignment
 
 <p align="center">
-<a href="./previews/preview.png"><img src="./previews/preview.png" alt="preview-image" width="800" height="auto"></a>
+<a href="./previews/preview.gif"><img src="./previews/preview.gif" alt="preview-image" width="800" height="auto"></a>
 </p>
 
 # Introduction
