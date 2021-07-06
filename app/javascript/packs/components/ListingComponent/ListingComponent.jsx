@@ -24,16 +24,19 @@ const ListingComponent = () => {
 
   return folderData ? (
     <div className={styles.listingContainer}>
-      <select
-        name="viewOption"
-        id="viewOption"
-        value={viewOption}
-        onChange={event => setViewOption(event.target.value)}
-        className={styles.viewOptionSelector}
-      >
-        <option value="folders">Folders ({folderData.length})</option>
-        <option value="projects">Projects ({projectCounter(folderData)})</option>
-      </select>
+      <div className={styles.viewOptionSelectContainer}>
+        <select
+          name="viewOption"
+          id="viewOption"
+          value={viewOption}
+          onChange={event => setViewOption(event.target.value)}
+          className={styles.viewOptionSelector}
+        >
+
+          <option value="folders">Folders ({folderData.length})</option>
+          <option value="projects">Projects ({projectCounter(folderData)})</option>
+        </select>
+      </div>
       <div className={styles.folderList}>
         {
           folderData.map(folder => (

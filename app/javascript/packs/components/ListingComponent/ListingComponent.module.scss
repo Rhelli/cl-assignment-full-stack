@@ -5,7 +5,18 @@
   height: auto;
 
   .viewOptionSelector {
-    width: 100px;
+    width: 120px;
+    height: 32px;
+    font: 400 16px/16px 'Larsseit', sans-serif;
+    margin-bottom: 20px;
+    color: #001758;
+    border-color: #707070;
+    background-color: #eef2f4;
+    border-radius: 2px;
+
+    &:focus {
+      outline: none;
+    }
   }
   
   .folderList {
